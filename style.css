@@ -1,44 +1,56 @@
+/* si tu commente une ou plusieurs ligne et tu n'as plus besoin d'eux pourquoi les laissés il faut les supprimer s'il font rien ou le decommenter  dans le cas contraire */
+/* Les nom utiliser pour les classes ou les id doit avoir une signification */
 body{
+    /* les deux propriètes css que tu utilsé font quoi */
     position: relative;
+    margin: 0;
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:rgba(206, 206, 185, 0.829);
-    margin: 0;
 }
 .global{
+    /* les trois propriètes css que tu as utilisé font quoi exactement */
     justify-content: center;
     align-items: center;
     background-color: blue;
+
     border-radius: 6px;
     /*width: 60%;
     margin: 20px auto*/
 }
 .titrep1{
+    /* les trois propriètes css que tu as utilisé font quoi exactement */
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     border: 2px solid #fff;
+
+    background-color: #fff;
     padding: 30px;
      border-top-left-radius: 5px;
      border-top-right-radius: 5px;
 }
 .contenus{
+    /* les quatre propriètes css que tu as utilisé font quoi exactement */
     position: relative;
-    display: flex;
     flex-wrap:wrap;
     background: blue;
     border-radius: 6px;
    width:100%;
+
+    display: flex;
 }
 .contenu1{
-    background-color: rgba(4, 199, 134, 0.842);
-    width: 50%;
+    /* au lieu d'utiliser 4 balises juste pour les centre pourquoi pas utilisé une padding et faire pareil pour optimiser ton code */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgba(4, 199, 134, 0.842);
+    width: 50%;
     color: #fff;
     border-radius: 1px;
      border-bottom-left-radius: 5px;
@@ -48,12 +60,14 @@ body{
     transform: translate(-50%, -50%);*/
 }
 .contenu2{
-    background-color: aqua;
-    width: 50%;
+    /* pareil ici aussi */
    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: aqua;
+    width: 50%;
     border-radius: 1px;
     color: #fff;
     border-bottom-right-radius: 5px;
@@ -73,15 +87,21 @@ body{
     font-size: 1.5em;
 }
 .btcontenu1{
-    background-color: rgb(147, 236, 14);
+    /* au lieu de 4 propriètes  */
+    /* padding: 10px 30%; */
     padding-left:85px;
     padding-right: 85px;
     padding-bottom: 10px;
     padding-top: 10px;
+
+    background-color: rgb(147, 236, 14);
+    /* de preference : border: none; */
     border: 0px;
+
     border-radius: 5px;
 }
 .text{
+    /* trés bien refléchis la seul chose que j'étais sûr que tu vas raté c'est elle que tu as trouvé😅 mais il faut l'augmenté */
     line-height: 20px;
 }
 .paragraphe1{
@@ -89,6 +109,7 @@ body{
 }
 @media screen and (max-width: 588px) {
     .contenus {
+        /* je vois l'utilité de ces 4 propriètés css, explication */
         display: block;
         align-items: center;
         gap: 100px;
@@ -97,6 +118,7 @@ body{
     .contenu1,
     .contenu2 {
         width: 100%;
+        /* l'utilité de ces deux propriètés */
         align-items: center;
         justify-content: center;
     }
@@ -110,6 +132,7 @@ body{
      margin-right:40%;
   }
   .btcontenu1{
+    /* la taille du boutton n'est pas fix,elle doit être en % */
    padding: 10px 120px;
   }
   .contenu1{
