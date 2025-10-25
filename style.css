@@ -1,10 +1,12 @@
 /* si tu commente une ou plusieurs ligne et tu n'as plus besoin d'eux pourquoi les laissés il faut les supprimer s'il font rien ou le decommenter  dans le cas contraire */
 /* Les nom utiliser pour les classes ou les id doit avoir une signification */
 body{
-    /* les deux propriètes css que tu utilsé font quoi */
+    /* les deux propriètes css que tu utilsé font quoi
+    le nagivigateur donne de margin  par defaur pour eviter ca j'ai initialiseé mon margin en o px 
+    margin:permet de creer de l'espace a l'exterieur d'un element; 
+    position relative:permet de positionner un element  de sa position static*/
     position: relative;
     margin: 0;
-
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,38 +14,39 @@ body{
     background-color:rgba(206, 206, 185, 0.829);
 }
 .global{
-    /* les trois propriètes css que tu as utilisé font quoi exactement */
+    /* les trois propriètes css que tu as utilisé font quoi exactement 
+    les 2 elements permettent de centrer  verticalement et horizontalement et border-raduis permet d'arondir les bordures*/
     justify-content: center;
     align-items: center;
     background-color: blue;
-
     border-radius: 6px;
     /*width: 60%;
     margin: 20px auto*/
 }
 .titrep1{
-    /* les trois propriètes css que tu as utilisé font quoi exactement */
+    /* les trois propriètes css que tu as utilisé font quoi exactement
+    elles permettent de positionner nos elements horizontalemnts et verticalements */
     justify-content: center;
     align-items: center;
     border: 2px solid #fff;
-
     background-color: #fff;
     padding: 30px;
      border-top-left-radius: 5px;
      border-top-right-radius: 5px;
 }
 .contenus{
-    /* les quatre propriètes css que tu as utilisé font quoi exactement */
+    /* les quatre propriètes css que tu as utilisé font quoi exactement 
+    dislpay-flex :elle met les elements en ligne l'un apres l'autre sur la meme ligne
+    flex-wrap:apres avoir mis en s'il n' y a pas d'espace elle permet de retourner a la ligne directement*/
     position: relative;
     flex-wrap:wrap;
     background: blue;
     border-radius: 6px;
    width:100%;
-
     display: flex;
 }
 .contenu1{
-    /* au lieu d'utiliser 4 balises juste pour les centre pourquoi pas utilisé une padding et faire pareil pour optimiser ton code */
+    /* au lieu d'utiliser 4 balises juste pour les centre pourquoi pas utilisé une padding et faire pareil pour optimiser ton code  bonee remarque c'est noté*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,27 +92,32 @@ body{
 .btcontenu1{
     /* au lieu de 4 propriètes  */
     /* padding: 10px 30%; */
-    padding-left:85px;
+   /* padding-left:85px;
     padding-right: 85px;
     padding-bottom: 10px;
-    padding-top: 10px;
-
+    padding-top: 10px;*/
+     padding: 10% 40%;
     background-color: rgb(147, 236, 14);
     /* de preference : border: none; */
-    border: 0px;
+    border: none;
 
     border-radius: 5px;
 }
 .text{
-    /* trés bien refléchis la seul chose que j'étais sûr que tu vas raté c'est elle que tu as trouvé😅 mais il faut l'augmenté */
+    /* trés bien refléchis la seul chose que j'étais sûr que tu vas raté c'est elle que tu as trouvé😅 mais il faut l'augmenté  merci*/
     line-height: 20px;
+}
+.contenu2-P ul li {
+    list-style: none;
+    gap: 20px;
 }
 .paragraphe1{
     line-height: 20px;
 }
 @media screen and (max-width: 588px) {
     .contenus {
-        /* je vois l'utilité de ces 4 propriètés css, explication */
+        /* je vois l'utilité de ces 4 propriètés css, explication 
+        display-block:permet de disposer les ementents qui sont sur en ligne en bloc l'un au dessous de l'autre*/
         display: block;
         align-items: center;
         gap: 100px;
@@ -133,7 +141,7 @@ body{
   }
   .btcontenu1{
     /* la taille du boutton n'est pas fix,elle doit être en % */
-   padding: 10px 120px;
+   padding: 10% 60%;
   }
   .contenu1{
      height:200px;
