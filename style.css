@@ -87,6 +87,7 @@ body{
 .paragraphe1{
     line-height: 20px;
 }
+
 @media screen and (max-width: 588px) {
     .contenus {
         display: block;
