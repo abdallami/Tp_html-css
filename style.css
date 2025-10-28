@@ -103,6 +103,14 @@ body{
 
     border-radius: 5px;
 }
+
+.contenu1P{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
 .text{
     /* trés bien refléchis la seul chose que j'étais sûr que tu vas raté c'est elle que tu as trouvé😅 mais il faut l'augmenté  merci*/
     line-height: 20px;
@@ -112,7 +120,9 @@ body{
     gap: 20px;
 }
 .paragraphe1{
-    line-height: 20px;
+    display: block;
+    gap:10px;
+
 }
 @media screen and (max-width: 588px) {
     .contenus {
@@ -138,6 +148,8 @@ body{
   }
   .contenu1P{
      margin-right:20%;
+     display: block;
+    gap: 20px;
   }
   .btcontenu1{
     /* la taille du boutton n'est pas fix,elle doit être en % */
